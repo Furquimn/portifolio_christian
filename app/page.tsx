@@ -1,5 +1,6 @@
-import HomeHero from "../scr/components/HomeHero";
-import HomeNavBar from "../scr/components/HomeNavBar";
+import HomeHero from "./components/Hero";
+import HomeNavBar from "./components/NavBar";
+import Projetos from "./components/Projetos";
 
 export default function HomePage() {
   return (
@@ -7,6 +8,7 @@ export default function HomePage() {
       <HomeNavBar />
 
         <HomeHero />
+        <Projetos />
 
     </main>
   );
