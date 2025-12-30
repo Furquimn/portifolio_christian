@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 
+
 type CardProps = {
   image: {
     src: string;
@@ -26,21 +27,22 @@ export default function CardProjeto({
   actions,
 }: CardProps) {
   return (
-    <article className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <article className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-30">
       {/* Coluna esquerda — FUNDO */}
-      <div className="col-span-1 rounded-xl bg-[#1A1A1A] p-8 flex justify-center items-center">
-        <Image
-          src={image.src}
-          alt={image.alt}
-          width={400} // largura máxima desejada
-          height={400} // altura proporcional
-          className="rounded-lg object-contain"
-          priority
-        />
+      <div className=" rounded-xl bg-[#1A1A1A] p-8 flex justify-center items-center">
+        <div className="relative w-full h-64 md:h-96 ">
+          <Image
+            src={image.src}
+            alt={image.alt}
+            fill
+            className="rounded-lg"
+            priority
+          />
+        </div>
       </div>
 
       {/* Coluna direita — CONTEÚDO */}
-      <div className="col-span-1">
+      <div className="">
         <h3 className="font-manrope text-2xl md:text-3xl text-white leading-[140%] font-medium">
           {title}
         </h3>
@@ -68,9 +70,9 @@ export default function CardProjeto({
             <Link
               key={index}
               href={action.href}
-              className="text-lime-400 hover:text-lime-300 transition"
+              className="text-[#D3E97A] hover:text-lime-300 transition border-b-2 border-[#D3E97A]"
             >
-              {action.label} ↗
+              {action.label} 
             </Link>
           ))}
         </div>
