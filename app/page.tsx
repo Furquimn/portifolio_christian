@@ -1,5 +1,5 @@
 import AboutMe from "./components/AboutMe";
-import HomeHero from "./components/Hero";
+import Hero from "./components/Hero";
 import HomeNavBar from "./components/NavBar";
 import Projetos from "./components/Projetos";
 import Contact from "./components/Contact";
@@ -10,7 +10,7 @@ export default function HomePage() {
     <main className=" ">
       <HomeNavBar />
 
-        <HomeHero />
+        <Hero />
         <Projetos />
         <AboutMe/>
         <Contact/>
