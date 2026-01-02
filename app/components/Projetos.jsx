@@ -6,7 +6,7 @@ export default function Projetos() {
   return (
     <section className="bg-black ">
       <div className="container mx-auto px-4 pt-10 ">
-        <div className="flex md:grid md:grid-cols-2 ">
+        <div className="flex md:grid md:grid-cols-2  ">
           <div>
             <h2 className="font-bebas text-3xl  xl:text-7xl lg:text-6xl 2xl:text-8xl text-gray-100 md:text-5xl">
               Projetos
@@ -18,7 +18,7 @@ export default function Projetos() {
           </div>
         </div>
 
-        <CardProjeto 
+        <CardProjeto
           image={{
             src: "/teste.svg",
             alt: "teste",
@@ -31,7 +31,7 @@ export default function Projetos() {
             {
               href: "/projetos/tryCatch4Match",
               label: (
-                <span className="flex items-center gap-3 text-[#D3E97A]">
+                <span className="flex items-center gap-3 text-lime-300">
                   Ver projeto
                   <ArrowUpRight size={16} />
                 </span>
@@ -40,48 +40,14 @@ export default function Projetos() {
             {
               href: "https://github.com/Furquimn/trycatch",
               label: (
-                <span className="flex items-center gap-3 text-[#D3E97A] ">
+                <span className="flex items-center gap-3 text-lime-300 ">
                   GitHub
-                  <FaGithub size={16} /> 
+                  <FaGithub size={16} />
                 </span>
               ),
             },
           ]}
         />
-
-            <CardProjeto 
-          image={{
-            src: "/teste.svg",
-            alt: "teste",
-          }}
-          title="Promotional landing page for our favorite show"
-          description="Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating a newsletter feature to keep fans updated with the latest adventures."
-          client="cliente teste"
-          role="Desenvolvedor FrontEnd"
-          actions={[
-            {
-              href: "/projetos/tryCatch4Match",
-              label: (
-                <span className="flex items-center gap-3 text-[#D3E97A]">
-                  Ver projeto
-                  <ArrowUpRight size={16} />
-                </span>
-              ),
-            },
-            {
-              href: "https://github.com/Furquimn/trycatch",
-              label: (
-                <span className="flex items-center gap-3 text-[#D3E97A] ">
-                  GitHub
-                  <FaGithub size={16} /> 
-                </span>
-              ),
-            },
-          ]}
-        />
-
-  
-        
       </div>
     </section>
   );

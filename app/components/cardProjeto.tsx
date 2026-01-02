@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
 
-
 type CardProps = {
   image: {
     src: string;
@@ -69,10 +68,11 @@ export default function CardProjeto({
           {actions.map((action, index) => (
             <Link
               key={index}
+              target="_blank"
               href={action.href}
               className="text-[#D3E97A] hover:text-lime-300 transition border-b-2 border-[#D3E97A]"
             >
-              {action.label} 
+              {action.label}
             </Link>
           ))}
         </div>
