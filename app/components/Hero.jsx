@@ -36,7 +36,7 @@ export default function Hero() {
               <a
                 href="https://wa.me/5519999902008"
                 target="_blank"
-                className="bg-[#D3E97A] font-manrope text-[16px] gap-3 flex items-center justify-between font-bold  pr-1 pl-4 rounded-[100px] w-auto h-12"
+                className="bg-[#D3E97A] text-black font-manrope text-[16px] gap-3 flex items-center justify-between font-bold  pr-1 pl-4 rounded-[100px] w-auto h-12"
               >
                 Contact Me
                 <span className="bg-black rounded-full h-10 w-10 flex items-center justify-center">
