@@ -1,6 +1,6 @@
 import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
-import HomeNavBar from "./components/NavBar";
+import NavBar from "./components/NavBar";
 import Projetos from "./components/Projetos";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -8,13 +8,12 @@ import Footer from "./components/Footer";
 export default function HomePage() {
   return (
     <main className=" ">
-      <HomeNavBar />
-
-        <Hero />
-        <Projetos />
-        <AboutMe/>
-        <Contact/>
-        <Footer/>
+      <NavBar />
+      <Hero />
+      <Projetos />
+      <AboutMe />
+      <Contact />
+      <Footer />
     </main>
   );
 }

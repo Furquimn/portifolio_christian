@@ -3,7 +3,7 @@ import { Download } from "lucide-react";
 
 export default function AboutMe() {
   return (
-    <section className="bg-black pt-20 ">
+    <section id="AboutMe" className="bg-black pt-20 ">
       <div className="container mx-auto px-4 lg:px-40 pt-10 ">
         <h2 className="text-white font-bebas text-6xl mb-5">Sobre mim</h2>
 

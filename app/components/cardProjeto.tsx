@@ -11,6 +11,7 @@ type CardProps = {
   description: string;
   client: string;
   role: string;
+  stacks: ReactNode;
   actions: {
     label: ReactNode;
     href: string;
@@ -23,6 +24,7 @@ export default function CardProjeto({
   description,
   client,
   role,
+  stacks,
   actions,
 }: CardProps) {
   return (
@@ -62,6 +64,11 @@ export default function CardProjeto({
         <div className="border-b border-gray-700 py-2 flex justify-between">
           <span className="font-manrope text-white">Cargo</span>
           <span className="font-manrope text-gray-400">{role}</span>
+        </div>
+
+         <div className="border-b border-gray-700 py-2 flex items-center justify-between">
+          <span className="font-manrope text-white">Stacks</span>
+          <span className="font-manrope text-gray-400">{stacks}</span>
         </div>
 
         <div className="mt-6 flex gap-6">
