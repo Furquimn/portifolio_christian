@@ -1,9 +1,9 @@
 import CardProjeto from "./cardProjeto";
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
-import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaCss3Alt, FaHtml5, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import {SiTypescript, SiNextdotjs } from "react-icons/si";
+import { SiTypescript, SiNextdotjs } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 export default function Projetos() {
@@ -51,6 +51,36 @@ export default function Projetos() {
             },
             {
               href: "https://github.com/Furquimn/trycatch",
+              label: (
+                <span className="flex items-center gap-3 text-lime-300 ">
+                  GitHub
+                  <FaGithub size={16} />
+                </span>
+              ),
+            },
+          ]}
+        />
+
+        <CardProjeto
+          image={{
+            src: "/lembreMed.svg",
+            alt: "Captura de tela do site LembreMEd",
+          }}
+          title="LembreMEd"
+          description="LembreMed é uma aplicação web voltada à gestão e controle da administração de medicamentos em ILPIs, desenvolvida para apoiar profissionais de saúde na organização de rotinas, redução de erros e aumento da segurança dos pacientes."
+          client="UNIVESP"
+          role="Desenvolvedor FrontEnd"
+          stacks={
+            <div className="flex mt-3 gap-3 items-center">
+              <FaHtml5 className="text-[#D3E97A] w-5 h-5" />
+              <FaCss3Alt className="text-[#D3E97A] w-5 h-5" />
+              <IoLogoJavascript className="text-[#D3E97A] w-5 h-5" />
+              <FaBootstrap className="text-[#D3E97A] w-5 h-5" />
+            </div>
+          }
+          actions={[
+            {
+              href: "https://github.com/Furquimn/lembremed",
               label: (
                 <span className="flex items-center gap-3 text-lime-300 ">
                   GitHub
