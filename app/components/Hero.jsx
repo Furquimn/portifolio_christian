@@ -33,18 +33,30 @@ export default function Hero() {
               <SiNextdotjs className="text-[#D3E97A] w-5 h-5" />
             </div>
             <div className="mt-8 flex gap-4">
-              <button className="bg-[#D3E97A] font-manrope text-[16px] gap-3 flex items-center justify-between font-bold  pr-1 pl-4 rounded-[100px] w-auto h-12">
+              <a
+                href="https://wa.me/5519999902008"
+                target="_blank"
+                className="bg-[#D3E97A] font-manrope text-[16px] gap-3 flex items-center justify-between font-bold  pr-1 pl-4 rounded-[100px] w-auto h-12"
+              >
                 Contact Me
                 <span className="bg-black rounded-full h-10 w-10 flex items-center justify-center">
                   <ArrowUpRight className="text-white h-5 w-5" />
                 </span>
-              </button>
-              <button className=" h-12 w-12 rounded-full bg-[#222222] flex items-center justify-center ">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/christian-furquim/"
+                target="_blank"
+                className=" h-12 w-12 rounded-full bg-[#222222] flex items-center justify-center "
+              >
                 <FaLinkedinIn className="text-[#D3E97A]" />
-              </button>
-              <button className="h-12 w-12 rounded-full bg-[#222222] flex items-center justify-center ">
+              </a>
+              <a
+                href="https://github.com/Furquimn"
+                target="_blank"
+                className="h-12 w-12 rounded-full bg-[#222222] flex items-center justify-center "
+              >
                 <FaGithub className="text-[#D3E97A]" />
-              </button>
+              </a>
             </div>
           </div>
           <div className="mt-16 mb-10 w-full max-w-sm md:max-w-md lg:max-w-lg">
